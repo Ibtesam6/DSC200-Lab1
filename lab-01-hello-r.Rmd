@@ -2,7 +2,10 @@
 title: "Lab 01 - Hello R"
 author: "Ibtesam faleh"
 date: "7/2/2021"
-output: html_document
+output: 
+  html_document: 
+    fig_width: 11
+    fig_height: 7
 ---
 
 University ID: 2201002692
@@ -18,4 +21,17 @@ library(datasauRus)
 
 ### Lab Exercise
 
-(Type your answer to the Exercise here. Remember to include the code, you need to put the code between three backticks followed by the following line on top of the code {r load-packages, message=FALSE}. See 'Load Packages' above as an example. Delete everything in these brackets after typing your answer.)
+
+
+code :
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+
+(Correlation Coefficient = -0.0645 ) in dino
+( the graph like dinosaur)
+( Correlation Coefficien = -0.0683 ) in circle 
+( the graph like circle )
+```
+
