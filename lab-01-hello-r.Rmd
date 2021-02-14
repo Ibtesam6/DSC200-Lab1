@@ -20,8 +20,11 @@ library(datasauRus)
 
 
 ### Lab Exercise
-
-
+> library(tidyverse)
+> library(datasauRus)
+> head(dataasurus_dozen)
+> summary(dataasurus_dozen)
+> view(dataasurus_dozen)
 
 code :
 circle_data <- datasaurus_dozen %>%
